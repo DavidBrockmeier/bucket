@@ -1,0 +1,76 @@
+{
+    "homepage": "https://www.ntlite.com/",
+    "version": "6.05-3730",
+    "architecture": {
+        "64bit": {
+            "url": "http://downloads.ntlite.com/files/NTLite_setup_x64.exe",
+            "hash": "sha1:61726930823b6b5f87f55a79cb7a5b3864f49f9d",
+            "bin": [
+                [
+                    "NTLite.exe",
+                    "NTLite"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "NTLite.exe",
+                    "NTLite"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "http://downloads.ntlite.com/files/NTLite_setup_x86.exe",
+            "hash": "sha1:f82c65c84e283b92ba0bb1b0202be86e37060828",
+            "bin": [
+                [
+                    "NTLite.exe",
+                    "NTLite"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "NTLite.exe",
+                    "NTLite"
+                ]
+            ]
+        }
+    },
+    "installer": {
+        "args": [
+            "/SILENT",
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NOICONS",
+            "/DIR=$dir"
+        ]
+    },
+    "uninstaller": {
+        "file": "unins000.exe",
+        "args": [
+            "/SILENT",
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NOCANCEL"
+        ]
+    },
+    "pre_install": "if(!(Test-Path \"$persist_dir\\settings.xml\")) {Set-Content -Encoding ASCII -Path \"$dir\\settings.xml\" -Value '<?xml version=\"1.0\" encoding=\"utf-8\"?><WebDAVClientSetting xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"></WebDAVClientSetting>'}",
+    "persist": [
+        "settings.xml",
+        "Presets",
+        "Updates"
+    ],
+    "checkver": {
+        "url": "https://www.ntlite.com/download/",
+        "re": "v(([\\d]).([\\d]).([\\d]).([\\d]{4}))"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://downloads.ntlite.com/files/NTLite_setup_x64.exe"
+            },
+            "32bit": {
+                "url": "http://downloads.ntlite.com/files/NTLite_setup_x86.exe"
+            }
+        }
+    }
+}
