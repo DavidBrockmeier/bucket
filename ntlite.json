@@ -1,32 +1,32 @@
 {
-  "homepage": "https://www.ntlite.com/",
-  "version": "1.8.0.7046",
-  "url": "http://downloads.ntlite.com/files/NTLite_setup_x64.exe",
-  "hash": "1f14b0b690b50c4db8a3a23d5b0f1e62f73060fe84bdf8a015783854e129373f",
-  "shortcuts": [
-    [
-      "NTLite.exe",
-      "NTLite"
-    ]
-  ],
-  "depends": "innounp",
-  "pre_install": "if(!(Test-Path \"$persist_dir\\settings.xml\")) {Set-Content -Encoding ASCII -Path \"$dir\\settings.xml\" -Value '<?xml version=\"1.0\" encoding=\"utf-8\"?><WebDAVClientSetting xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"></WebDAVClientSetting>'}",
-  "installer": {
-    "script": [
-      "Expand-InnoArchive -Path \"$dir\\$fname\"",
-      "Expand-InnoArchive -Path \"$dir\\$fname\" -ExtractDir '{code_CefInstallDir}' -Removal"
-    ]
-  },
-  "persist": [
-    "settings.xml",
-    "Presets",
-    "Updates"
-  ],
-  "checkver": {
-    "url": "https://www.ntlite.com/download/",
-    "re": "v(([\\d]).([\\d]).([\\d]).([\\d]{4}))"
-  },
-  "autoupdate": {
-    "url": "http://downloads.ntlite.com/files/NTLite_setup_x64.exe"
-  }
+    "homepage": "https://www.ntlite.com/",
+    "version": "1.8.0.7070",
+    "url": "http://downloads.ntlite.com/files/NTLite_setup_x64.exe",
+    "hash": "692868c7556d13961badaf5f2f9cedbf614391ad1da472dc02e17570aa79a794",
+    "shortcuts": [
+        [
+            "NTLite.exe",
+            "NTLite"
+        ]
+    ],
+    "depends": "innounp",
+    "pre_install": "if(!(Test-Path \"$persist_dir\\settings.xml\")) {Set-Content -Encoding ASCII -Path \"$dir\\settings.xml\" -Value '<?xml version=\"1.0\" encoding=\"utf-8\"?><WebDAVClientSetting xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"></WebDAVClientSetting>'}",
+    "installer": {
+        "script": [
+            "Expand-InnoArchive -Path \"$dir\\$fname\"",
+            "Expand-InnoArchive -Path \"$dir\\$fname\" -ExtractDir '{code_CefInstallDir}' -Removal"
+        ]
+    },
+    "persist": [
+        "settings.xml",
+        "Presets",
+        "Updates"
+    ],
+    "checkver": {
+        "url": "https://www.ntlite.com/download/",
+        "re": "v(([\\d]).([\\d]).([\\d]).([\\d]{4}))"
+    },
+    "autoupdate": {
+        "url": "http://downloads.ntlite.com/files/NTLite_setup_x64.exe"
+    }
 }
