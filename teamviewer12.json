@@ -1,0 +1,22 @@
+{
+    "homepage": "https://www.teamviewer.com",
+    "license": {
+        "identifier": "Shareware",
+        "url": "https://www.teamviewer.com/en/eula/"
+    },
+    "description": "TeamViewer is proprietary computer software for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers.",
+    "version": "12.0.251385",
+    "url": "https://download.teamviewer.com/download/version_12x/TeamViewerPortable.zip",
+    "hash": "552e93749427c5a932af18b9d749b4fdb379d9ae71ceca5ffcd3ffb415068a7a",
+    "bin": "teamviewer.exe",
+    "shortcuts": [
+        [
+            "TeamViewer.exe",
+            "TeamViewer"
+        ]
+    ],
+    "persist": "teamviewer.ini",
+    "autoupdate": {
+        "url": "https://download.teamviewer.com/download/version_12x/TeamViewerPortable.zip"
+    }
+}
