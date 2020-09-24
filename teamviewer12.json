@@ -7,7 +7,7 @@
     "description": "TeamViewer is proprietary computer software for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers.",
     "version": "12.0.251385",
     "url": "https://download.teamviewer.com/download/version_12x/TeamViewerPortable.zip",
-    "hash": "552e93749427c5a932af18b9d749b4fdb379d9ae71ceca5ffcd3ffb415068a7a",
+    "hash": "689db065da328fbcd76f1dbd534a445280dd577e34466e877fdf819a2048693d",
     "bin": "teamviewer.exe",
     "shortcuts": [
         [
