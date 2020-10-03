@@ -1,0 +1,32 @@
+{
+    "homepage": "https://www.ntlite.com/",
+    "version": "2.1.0.7656",
+    "url": "http://downloads.ntlite.com/files/NTLite_setup_x64_beta.exe",
+    "hash": "66b2216b0f6a3469d56a2391e2381d4c5042f7796546924a4e46baee0e6d6daa",
+    "shortcuts": [
+        [
+            "NTLite.exe",
+            "NTLite"
+        ]
+    ],
+    "depends": "innounp",
+    "pre_install": "if(!(Test-Path \"$persist_dir\\settings.xml\")) {Set-Content -Encoding ASCII -Path \"$dir\\settings.xml\" -Value '<?xml version=\"1.0\" encoding=\"utf-8\"?><WebDAVClientSetting xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"></WebDAVClientSetting>'}",
+    "installer": {
+        "script": [
+            "Expand-InnoArchive -Path \"$dir\\$fname\"",
+            "Expand-InnoArchive -Path \"$dir\\$fname\" -ExtractDir '{code_CefInstallDir}' -Removal"
+        ]
+    },
+    "persist": [
+        "settings.xml",
+        "Presets",
+        "Updates"
+    ],
+    "checkver": {
+        "url": "https://www.ntlite.com/download/",
+        "re": "NTLite beta.*v(([\\d]).([\\d]).([\\d]).([\\d]{4}))"
+    },
+    "autoupdate": {
+        "url": "http://downloads.ntlite.com/files/NTLite_setup_x64_beta.exe"
+    }
+}
