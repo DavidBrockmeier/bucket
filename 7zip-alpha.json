@@ -20,6 +20,12 @@
         "7z.exe",
         "7zG.exe"
     ],
+    "installer": {
+        "args": [
+            "/S",
+            "/D=$dir"
+        ]
+    },
     "checkver": {
         "url": "https://www.7-zip.org/history.txt",
         "regex": "\\n([\\d.]+) alpha"
