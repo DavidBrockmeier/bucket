@@ -5,15 +5,15 @@
         "identifier": "Freeware,LGPL-2.0-only,BSD-3-Clause",
         "url": "https://www.7-zip.org/license.txt"
     },
-    "version": "20.02",
+    "version": "21.00",
     "architecture": {
         "64bit": {
-            "url": "https://7-zip.org/a/7z2002-x64.exe",
-            "hash": "356e128fce6625f5bbe03d4b8b6dfcd744ee4482a16e9e495ee44ad77c2435e5"
+            "url": "https://7-zip.org/a/7z2100-x64.exe",
+            "hash": "bfb3507b104400e8dd2b12e476adbfe4cbbf6191dfd36e672f2b5ead4756bfd1"
         },
         "32bit": {
-            "url": "https://7-zip.org/a/7z2002.exe",
-            "hash": "9443e1415742e839a040df5f76222e68ec8c246dac0448afee1b2893b15ed20d"
+            "url": "https://7-zip.org/a/7z2100.exe",
+            "hash": "ca42149aa21aa28a22157502aa0ed8b190d6c5d48b710a3967563a30230d5d63"
         }
     },
     "bin": [

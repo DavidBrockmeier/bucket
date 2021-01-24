@@ -2,9 +2,9 @@
     "homepage": "https://www.techpowerup.com/download/techpowerup-throttlestop/",
     "description": "ThrottleStop is a small application designed to monitor for and correct the three main types of CPU throttling that are being used on many laptop computers.",
     "license": "Freeware",
-    "version": "9.2.2",
-    "url": "http://nl1-dl.techpowerup.com/files/ThrottleStop_9.2.2.zip",
-    "hash": "a34a4dced372a4de0d3183edbc06498f06cb5939a034169cdce03ec7c3b5cf6c",
+    "version": "9.2.9",
+    "url": "http://nl1-dl.techpowerup.com/files/ThrottleStop_9.2.9.zip",
+    "hash": "ceed19addb15bb6dc9d35e58fdb4d86842e44639acd25f3d159fce4f998981c6",
     "installer": {
         "script": [
             "$FILE = 'ThrottleStop.ini'",
