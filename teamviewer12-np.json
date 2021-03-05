@@ -1,5 +1,5 @@
 {
-    "version": "12.0.258869",
+    "version": "12.0.259024",
     "description": "Software for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers.",
     "homepage": "https://www.teamviewer.com/en/download/previous-versions/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://www.teamviewer.com/en/eula/"
     },
     "url": "https://dl.teamviewer.com/download/version_12x/TeamViewer_Setup.exe#/setup.exe",
-    "hash": "71d7927ad4e006e87757da60bad2337948a0111e5972a22a8c35b136a3d4b8f3",
+    "hash": "3be050f7905a23add013c41aa69336b14674ce17a541437de710f5e5073f2e9b",
     "installer": {
         "script": [
             "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S', '/norestart') -RunAs | Out-Null",

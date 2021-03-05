@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.hwinfo.com/",
-    "version": "6.41-4355",
+    "version": "6.43-4385",
     "architecture": {
         "64bit": {
-            "url": "https://www.hwinfo.com/files/hwi_641_4355.zip",
-            "hash": "29ae8ceeee8620f584d6593b3b89d0696b7769a0c80c15b95dd6ab81bf59be25",
+            "url": "https://www.hwinfo.com/files/hwi_643_4385.zip",
+            "hash": "b99488be4ad9c736d4658bef01ca87d75443b197ef3e0c69bfc06b8c4a58ae1a",
             "bin": [
                 [
                     "HWiNFO64.exe",
@@ -19,8 +19,8 @@
             ]
         },
         "32bit": {
-            "url": "https://www.hwinfo.com/files/hwi_641_4355.zip",
-            "hash": "29ae8ceeee8620f584d6593b3b89d0696b7769a0c80c15b95dd6ab81bf59be25",
+            "url": "https://www.hwinfo.com/files/hwi_643_4385.zip",
+            "hash": "b99488be4ad9c736d4658bef01ca87d75443b197ef3e0c69bfc06b8c4a58ae1a",
             "bin": [
                 [
                     "HWiNFO32.exe",
