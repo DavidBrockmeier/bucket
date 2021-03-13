@@ -8,11 +8,11 @@
     "version": "12.0.251385",
     "url": "https://download.teamviewer.com/download/version_12x/TeamViewerPortable.zip",
     "hash": "6140629988e7208576428b37d516a9910580b85aaa309d3c6deea9f35a80fa4d",
-    "bin": "teamviewer.exe",
+    "bin": "tv12.exe",
     "shortcuts": [
         [
-            "TeamViewer.exe",
-            "TeamViewer"
+            "tv12.exe",
+            "tv12"
         ]
     ],
     "persist": "teamviewer.ini",
