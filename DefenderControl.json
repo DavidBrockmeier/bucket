@@ -1,0 +1,30 @@
+{
+    "homepage": "https://www.sordum.org/",
+    "version": "1.7",
+    "url": "https://www.sordum.org/files/download/defender-control/DefenderControl.zip",
+    "extract_dir": "DefenderControl",
+    "hash": "ae313bb18b2f0c89f1f03bddf48a0abc5c77a0dafa150071d3d6276262d525a3",
+    "bin": [
+        [
+            "DefenderControl.exe",
+            "DefenderControl"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "DefenderControl.exe",
+            "DefenderControl"
+        ]
+    ],
+    "persist": [
+        "DefenderControl.ini",
+        "DefenderControl.ini"
+    ],
+    "checkver": {
+        "url": "https://www.sordum.org/downloads/?st-defender-control",
+        "re": "Defender Control v(([\\d]).([\\d]))"
+    },
+    "autoupdate": {
+        "url": "https://www.sordum.org/files/download/defender-control/DefenderControl.zip"
+    }
+}
