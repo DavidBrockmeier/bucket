@@ -7,7 +7,7 @@
         "url": "https://www.teamviewer.com/en/eula/"
     },
     "url": "https://dl.teamviewer.com/download/version_12x/TeamViewer_Setup.exe#/setup.exe",
-    "hash": "3be050f7905a23add013c41aa69336b14674ce17a541437de710f5e5073f2e9b",
+    "hash": "15327a6fefcd8e0d615e0f20a95518f91401a0f54cf3ecd098d20ef217104b69",
     "installer": {
         "script": [
             "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S', '/norestart') -RunAs | Out-Null",

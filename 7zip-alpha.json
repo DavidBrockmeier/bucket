@@ -18,6 +18,7 @@
     },
     "bin": [
         "7z.exe",
+        "7zFM.exe",
         "7zG.exe"
     ],
     "installer": {
