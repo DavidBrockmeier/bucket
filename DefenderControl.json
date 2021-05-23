@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.sordum.org/",
-    "version": "1.8",
+    "version": "1.9",
     "url": "https://www.sordum.org/files/download/defender-control/DefenderControl.zip",
     "extract_dir": "DefenderControl",
-    "hash": "9e458798fb80ad655600758706f653441af08e5103a1ff90c1e9861339aa946f",
+    "hash": "44b665201d7c23fc4a8f9977879d4ae9427ce1ab31c8b69f94c9c37d663dcb91",
     "bin": [
         [
             "DefenderControl.exe",
