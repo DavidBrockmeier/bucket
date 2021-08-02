@@ -10,10 +10,6 @@
         "64bit": {
             "url": "https://7-zip.org/a/7z2102-x64.exe",
             "hash": "4ed310c3a54e28d98f4500987da5391fc1ffa1c62301b96482e693c3ce76b741"
-        },
-        "32bit": {
-            "url": "https://7-zip.org/a/7z2102.exe",
-            "hash": "7391b272d001fe110eda6fbeb9b9a89e2111afe51b777495c828cfc72b5a95d8"
         }
     },
     "bin": [
