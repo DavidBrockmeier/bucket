@@ -1,40 +1,21 @@
 {
-    "version": "1.11.2421.0",
-    "description": "The new Windows Terminal, and the original Windows console host - all in the same place!",
-    "homepage": "https://github.com/microsoft/terminal",
+    "version": "v7.2.0-preview.10",
+    "description": "Cross-platform automation and configuration tool/framework, known as Powershell Core, that works well with existing tools and is optimized for dealing with structured data.",
+    "homepage": "https://github.com/PowerShell/PowerShell",
     "license": "MIT",
-    "suggest": {
-        "vcredist": "extras/vcredist2019"
-    },
-    "url": "https://github.com/microsoft/terminal/releases/download/v1.11.2421.0/Microsoft.WindowsTerminalPreview_1.11.2421.0_8wekyb3d8bbwe.msixbundle#/dl.7z",
-    "hash": "d5280d1dd95dc69ca4c5c27b94c76db9c1318dae7a8881b0732ea5816e2b0355",
-    "architecture": {
-        "64bit": {
-            "pre_install": "Get-ChildItem \"$dir\" -Exclude '*x64.msix' | Remove-Item -Force -Recurse"
-        },
-        "32bit": {
-            "pre_install": "Get-ChildItem \"$dir\" -Exclude '*x86.msix' | Remove-Item -Force -Recurse"
-        }
-    },
-    "installer": {
-        "script": [
-            "$winVer = [Environment]::OSVersion.Version",
-            "if (($winver.Major -lt '10') -or ($winVer.Build -lt 18362)) { throw 'At least Windows 10 18362 is required.' }",
-            "Get-ChildItem \"$dir\" '*.msix' | Select-Object -ExpandProperty Fullname | Expand-7zipArchive -DestinationPath \"$dir\" -Removal",
-            "Get-ChildItem \"$dir\\ProfileIcons\" '*.png' | Rename-Item -NewName { $_.Name.Replace('%7B', '{').Replace('%7D', '}') }"
-        ]
-    },
-    "bin": [
-        "wt.exe"
-    ],
+    "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.2.0-preview.10/PowerShell-7.2.0-preview.10-win-x64.zip",
+    "hash": "e6bba210ddc7ca7202e8334270609c021ee1db024bd0f740a4bc60569e56b6d8",
+    "bin": "pwsh.exe",
     "shortcuts": [
-        [
-            "wt.exe",
-            "Windows Terminal Preview"
-        ]
+      [
+        "pwsh.exe",
+        "PowerShell Core Preview"
+      ]
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/microsoft/terminal/releases/download/v$version/Microsoft.WindowsTerminalPreview_$version_8wekyb3d8bbwe.msixbundle#/dl.7z"
+      "url": "https://github.com/PowerShell/PowerShell/releases/tag/v$version/",
+      "regex": "$basename\\s*<ul>\\s*<li>$sha256"
     }
-}
+  }
+  

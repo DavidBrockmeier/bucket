@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.sordum.org/",
-    "version": "1.9",
-    "url": "https://www.sordum.org/files/download/defender-control/DefenderControl.zip",
+    "version": "2.0",
+    "url": "https://www.sordum.org/files/download/d-control/dControl.zip",
     "extract_dir": "DefenderControl",
-    "hash": "bd070ff4dafe67d1fc8c976c235cf0c9b9a20a2721b101724c660179f2faf2f4",
+    "hash": "2ce7326ed954fe626145652ff0c87f1462442891c6a8a95c4a227a817a0c0672",
     "bin": [
         [
             "DefenderControl.exe",
@@ -25,6 +25,6 @@
         "re": "Defender Control v(([\\d]).([\\d]))"
     },
     "autoupdate": {
-        "url": "https://www.sordum.org/files/download/defender-control/DefenderControl.zip"
+        "url": "https://www.sordum.org/files/download/d-control/dControl.zip"
     }
 }
