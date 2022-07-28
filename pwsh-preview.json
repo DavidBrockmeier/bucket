@@ -1,20 +1,20 @@
 {
-  "version": "v7.2.0-rc.1",
-  "description": "Cross-platform automation and configuration tool/framework, known as Powershell Core, that works well with existing tools and is optimized for dealing with structured data.",
-  "homepage": "https://github.com/PowerShell/PowerShell",
-  "license": "MIT",
-  "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.2.0-rc.1/PowerShell-7.2.0-rc.1-win-fxdependentWinDesktop.zip",
-  "hash": "e97764840b2d77a2ab95e9f89bea3e96ad38ef2dfcd1ede287617b561d01043b",
-  "bin": "pwsh.exe",
-  "shortcuts": [
-    [
-      "pwsh.exe",
-      "PowerShell Core Preview"
-    ]
-  ],
-  "checkver": "github",
-  "autoupdate": {
-    "url": "https://github.com/PowerShell/PowerShell/releases/tag/v$version/",
-    "regex": "$basename\\s*<ul>\\s*<li>$sha256"
-  }
+    "version": "7.2.5",
+    "description": "Cross-platform automation and configuration tool/framework, known as Powershell Core, that works well with existing tools and is optimized for dealing with structured data.",
+    "homepage": "https://github.com/PowerShell/PowerShell",
+    "license": "MIT",
+    "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.2.5/",
+    "hash": "7e5d2139f17734852738cb370ed0141549b2b2d21f8b677f603e1fac6a78afff",
+    "bin": "pwsh.exe",
+    "shortcuts": [
+        [
+            "pwsh.exe",
+            "PowerShell Core Preview"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/PowerShell/PowerShell/releases/tag/v$version/",
+        "regex": "$basename\\s*<ul>\\s*<li>$sha256"
+    }
 }
