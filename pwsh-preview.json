@@ -1,20 +1,23 @@
 {
-    "version": "7.2.5",
+    "version": "7.3.0-preview.6",
     "description": "Cross-platform automation and configuration tool/framework, known as Powershell Core, that works well with existing tools and is optimized for dealing with structured data.",
     "homepage": "https://github.com/PowerShell/PowerShell",
     "license": "MIT",
-    "url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.2.5/",
-    "hash": "7e5d2139f17734852738cb370ed0141549b2b2d21f8b677f603e1fac6a78afff",
-    "bin": "pwsh.exe",
+    "url": "https://github.com/PowerShell/PowerShell/releases/",
+    "hash": "5a6838a5cd2c28b0cf160db7b0d189eb60ab719dc6955728f71a9324dd932f94",
+    "bin": "pwsh-preview.exe",
     "shortcuts": [
         [
-            "pwsh.exe",
+            "pwsh-preview.exe",
             "PowerShell Core Preview"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/PowerShell/powershell/releases",
+        "re": "v(([\\d]).([\\d]).([\\d])-preview.([\\d]))"
+    },
     "autoupdate": {
-        "url": "https://github.com/PowerShell/PowerShell/releases/tag/v$version/",
-        "regex": "$basename\\s*<ul>\\s*<li>$sha256"
+        "url": "https://github.com/PowerShell/PowerShell/releases/",
+        "re": "v(([\\d]).([\\d]).([\\d])-preview.([\\d]))"
     }
 }
